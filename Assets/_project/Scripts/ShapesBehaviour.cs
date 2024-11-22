@@ -96,7 +96,7 @@ public class ShapesBehaviour : MonoBehaviour
         _cylinderRenderer.material.DOColor(_targetColor, _cylinderChangeColorDuration).SetLoops(_repeatsCount, _cylinderLoopType);
     }
 
-     private void ChangeText()
+    private void ChangeText()
     {
         _text.DOText("Измененный текст", _duration).SetLoops(_repeatsCount, _textLoopType);
         _text1.DOText(" Дополнительный текст", _duration).SetRelative().SetLoops(_repeatsCount, _textLoopType);
